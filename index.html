@@ -662,24 +662,29 @@
         <div class="brand-body">
           <div>
             <div class="section-head">
-              <span class="section-label">Studio Packaging Mockup (Cat-Eye Neutral)</span>
-              <span style="font-size:0.75rem;color:var(--muted)">Click image to zoom</span>
+              <span class="section-label">3 Pouch Packaging Contenders (Cat-Eye Neutral)</span>
+              <div class="mini-tabs">
+                <button class="mini-tab active" onclick="switchSundaeMockup('v1', this)">V1: Fudge Dipped</button>
+                <button class="mini-tab" onclick="switchSundaeMockup('v2', this)">V2: Electric Gelateria ⭐</button>
+                <button class="mini-tab" onclick="switchSundaeMockup('v3', this)">V3: Dopamine Sticker</button>
+                <button class="mini-tab" onclick="switchSundaeMockup('box', this)">Original Box</button>
+              </div>
             </div>
-            <div class="visual-card">
-              <img src="https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-reset-packaging.jpg" onerror="this.src='assets/sundae-reset-packaging.jpg'" alt="Sundae Reset Studio Packaging Mockup" onclick="openLightbox(this.src)" />
-              <div class="visual-caption">
-                <strong>"Fudge Dipped" Studio Render:</strong> Chocolate fudge dipped top header with raised 3D logo, Vanilla-to-Peach body reflecting the <em>Crème Brûlée</em> Cat-Eye Neutral nails, and pastel scoop stripes on the side spine.
+            <div class="visual-card" id="sundaeMockupCard">
+              <img id="sundaeMockupImg" src="https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-v1-fudge-pouch.jpg" onerror="this.src='assets/sundae-v1-fudge-pouch.jpg'" alt="Sundae Reset Studio Pouch Mockup" onclick="openLightbox(this.src)" />
+              <div class="visual-caption" id="sundaeMockupCaption">
+                <strong>Version 1 — "Fudge Dipped" Resealable Pouch:</strong> Keeps your original Ice Cream Parlor palette &amp; glossy 3D chocolate drip header on a sleek resealable UV-barrier beauty pouch. Paired with <em>Fraunces Black</em> + <em>Plus Jakarta Sans</em> typography.
               </div>
             </div>
           </div>
 
           <div>
             <div class="section-head">
-              <span class="section-label">Interactive Box Customizer (Live Shade &amp; Layout Test)</span>
+              <span class="section-label">Interactive Pouch/Box Customizer (Live Shade &amp; Layout Test)</span>
               <div class="mini-tabs">
-                <button class="mini-tab active" onclick="setSundaeStyle('dipped', this)">Fudge Dipped</button>
-                <button class="mini-tab" onclick="setSundaeStyle('stripe', this)">Gelato Stripe</button>
-                <button class="mini-tab" onclick="setSundaeStyle('scoop', this)">Color-Block Scoop</button>
+                <button class="mini-tab active" onclick="setSundaeStyle('dipped', this)">V1: Fudge Dipped</button>
+                <button class="mini-tab" onclick="setSundaeStyle('stripe', this)">V2: Gelateria Stripe</button>
+                <button class="mini-tab" onclick="setSundaeStyle('scoop', this)">V3: Scallop Scoop</button>
               </div>
             </div>
             <div class="live-stage">
@@ -702,27 +707,42 @@
 
           <div>
             <div class="section-head">
-              <span class="section-label">Logo &amp; Visual Identity Sheet</span>
-              <span style="font-size:0.75rem;color:var(--muted)">Click image to zoom</span>
+              <span class="section-label">Logo &amp; Typography System (3 Font Directions)</span>
+              <div class="mini-tabs">
+                <button class="mini-tab active" onclick="switchSundaeLogo('guide', this)">3-Font System Board</button>
+                <button class="mini-tab" onclick="switchSundaeLogo('orig', this)">V1 Fudge Wordmark</button>
+              </div>
             </div>
             <div class="visual-card">
-              <img src="https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-reset-logo.jpg" onerror="this.src='assets/sundae-reset-logo.jpg'" alt="Sundae Reset Logo Sheet" onclick="openLightbox(this.src)" />
-              <div class="visual-caption">
-                Primary glossy Chocolate Fudge wordmark + circular sunburst ice cream badge.
+              <img id="sundaeLogoImg" src="https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-typography-guide.jpg" onerror="this.src='assets/sundae-typography-guide.jpg'" alt="Sundae Reset Typography System" onclick="openLightbox(this.src)" />
+              <div class="visual-caption" id="sundaeLogoCaption">
+                <strong>01. Retro-Soda Serif:</strong> <em>Fraunces Black</em> + <em>Plus Jakarta Sans</em> &nbsp;|&nbsp;
+                <strong>02. Editorial Gelateria Split:</strong> <em>Instrument Serif Italic</em> + <em>Space Grotesk Bold</em> &nbsp;|&nbsp;
+                <strong>03. Dopamine Sans:</strong> <em>Syne ExtraBold</em> + <em>DM Mono</em>
               </div>
             </div>
           </div>
 
           <div>
             <div class="section-head">
-              <span class="section-label">Ice Cream Parlor Color Palette (Click to copy Hex)</span>
+              <span class="section-label">Palette A: Original Pastel Ice Cream (Click to copy)</span>
             </div>
-            <div class="palette-row">
+            <div class="palette-row" style="margin-bottom:1rem;">
               <div class="swatch" onclick="copyHex('#5C361E')"><div class="swatch-color" style="background:#5C361E"></div><div class="swatch-meta"><strong>Fudge</strong><span>#5C361E</span></div></div>
               <div class="swatch" onclick="copyHex('#FFC9DA')"><div class="swatch-color" style="background:#FFC9DA"></div><div class="swatch-meta"><strong>Strawberry</strong><span>#FFC9DA</span></div></div>
               <div class="swatch" onclick="copyHex('#C2F5D0')"><div class="swatch-color" style="background:#C2F5D0"></div><div class="swatch-meta"><strong>Pistachio</strong><span>#C2F5D0</span></div></div>
               <div class="swatch" onclick="copyHex('#FFF9CC')"><div class="swatch-color" style="background:#FFF9CC"></div><div class="swatch-meta"><strong>Vanilla</strong><span>#FFF9CC</span></div></div>
               <div class="swatch" onclick="copyHex('#FFCC85')"><div class="swatch-color" style="background:#FFCC85"></div><div class="swatch-meta"><strong>Peach</strong><span>#FFCC85</span></div></div>
+            </div>
+            <div class="section-head">
+              <span class="section-label">Palette B: Bolder "Electric Gelateria" (Click to copy)</span>
+            </div>
+            <div class="palette-row">
+              <div class="swatch" onclick="copyHex('#D91E36')"><div class="swatch-color" style="background:#D91E36"></div><div class="swatch-meta"><strong>Maraschino</strong><span>#D91E36</span></div></div>
+              <div class="swatch" onclick="copyHex('#3B1D11')"><div class="swatch-color" style="background:#3B1D11"></div><div class="swatch-meta"><strong>Espresso</strong><span>#3B1D11</span></div></div>
+              <div class="swatch" onclick="copyHex('#FF4D88')"><div class="swatch-color" style="background:#FF4D88"></div><div class="swatch-meta"><strong>Hot Pink</strong><span>#FF4D88</span></div></div>
+              <div class="swatch" onclick="copyHex('#7CE597')"><div class="swatch-color" style="background:#7CE597"></div><div class="swatch-meta"><strong>Bright Mint</strong><span>#7CE597</span></div></div>
+              <div class="swatch" onclick="copyHex('#FFE169')"><div class="swatch-color" style="background:#FFE169"></div><div class="swatch-meta"><strong>Butter</strong><span>#FFE169</span></div></div>
             </div>
           </div>
 
@@ -974,6 +994,55 @@
       document.querySelectorAll('.ring-accent').forEach(el => {
         el.classList.toggle('accent-on', ringAccentOn);
       });
+    }
+
+    const SUNDAE_MOCKUPS = {
+      v1: {
+        src: 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-v1-fudge-pouch.jpg',
+        fallback: 'assets/sundae-v1-fudge-pouch.jpg',
+        caption: '<strong>Version 1 — "Fudge Dipped" Resealable Pouch:</strong> Keeps your original Ice Cream Parlor palette &amp; glossy 3D chocolate drip header on a sleek resealable UV-barrier beauty pouch. Paired with <em>Fraunces Black</em> + <em>Plus Jakarta Sans</em> typography.'
+      },
+      v2: {
+        src: 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-v2-gelateria-pouch.jpg',
+        fallback: 'assets/sundae-v2-gelateria-pouch.jpg',
+        caption: '<strong>Version 2 (Top Recommendation) — "Electric Gelateria" Pouch:</strong> Punchier gelato colors (Maraschino Red, Bubblegum, Pistachio, Cream) in an Italian awning stripe header, high-arch caramel body, and an editorial split logo (<em>Instrument Serif Italic</em> + <em>Space Grotesk Bold</em>).'
+      },
+      v3: {
+        src: 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-v3-dopamine-pouch.jpg',
+        fallback: 'assets/sundae-v3-dopamine-pouch.jpg',
+        caption: '<strong>Version 3 — "Dopamine Scalloped Sticker" Pouch:</strong> Starface/Topicals-inspired pouch with an oversized wavy Butter Yellow &amp; Hot Pink scalloped sticker header and chunky <em>Syne ExtraBold</em> + <em>DM Mono</em> typography.'
+      },
+      box: {
+        src: 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-reset-packaging.jpg',
+        fallback: 'assets/sundae-reset-packaging.jpg',
+        caption: '<strong>Original "Fudge Dipped" Folding Carton Concept:</strong> Slim vertical box format with raised 3D fudge header and side scoop stripes.'
+      }
+    };
+
+    function switchSundaeMockup(ver, btn) {
+      btn.parentElement.querySelectorAll('.mini-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const m = SUNDAE_MOCKUPS[ver];
+      const img = document.getElementById('sundaeMockupImg');
+      img.onerror = function() { this.src = m.fallback; };
+      img.src = m.src;
+      document.getElementById('sundaeMockupCaption').innerHTML = m.caption;
+    }
+
+    function switchSundaeLogo(mode, btn) {
+      btn.parentElement.querySelectorAll('.mini-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const img = document.getElementById('sundaeLogoImg');
+      const cap = document.getElementById('sundaeLogoCaption');
+      if (mode === 'guide') {
+        img.onerror = function() { this.src = 'assets/sundae-typography-guide.jpg'; };
+        img.src = 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-typography-guide.jpg';
+        cap.innerHTML = '<strong>01. Retro-Soda Serif:</strong> <em>Fraunces Black</em> + <em>Plus Jakarta Sans</em> &nbsp;|&nbsp; <strong>02. Editorial Gelateria Split:</strong> <em>Instrument Serif Italic</em> + <em>Space Grotesk Bold</em> &nbsp;|&nbsp; <strong>03. Dopamine Sans:</strong> <em>Syne ExtraBold</em> + <em>DM Mono</em>';
+      } else {
+        img.onerror = function() { this.src = 'assets/sundae-reset-logo.jpg'; };
+        img.src = 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-reset-logo.jpg';
+        cap.innerHTML = 'Original glossy Chocolate Fudge wordmark + circular sunburst ice cream badge.';
+      }
     }
 
     function setSundaeStyle(style, btn) {
