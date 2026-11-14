@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive Brand Studio — Sundae Reset vs. Sun Kissed</title>
+  <title>Brand Identity &amp; Pouch Packaging Studio — Sundae Reset vs. Sun Kissed</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -43,14 +43,14 @@
     }
 
     header {
-      padding: 3rem 0 2rem;
+      padding: 2.75rem 0 1.75rem;
       border-bottom: 1px solid var(--border);
-      margin-bottom: 2rem;
+      margin-bottom: 1.75rem;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 1.25rem;
     }
 
     .eyebrow {
@@ -63,97 +63,34 @@
     }
 
     h1 {
-      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
       font-weight: 600;
       letter-spacing: -0.02em;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
 
     .subtitle {
-      font-size: 1rem;
+      font-size: 0.96rem;
       color: var(--muted);
-      max-width: 680px;
-    }
-
-    /* Foundation Card */
-    .foundation-bar {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 1.35rem 1.6rem;
-      margin-bottom: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.25rem;
-    }
-
-    .foundation-item h4 {
-      font-size: 0.74rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      margin-bottom: 0.3rem;
-    }
-
-    .foundation-item p {
-      font-size: 0.88rem;
-      font-weight: 500;
-    }
-
-    /* Interactive Control Dock */
-    .studio-dock {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 1.35rem 1.6rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 10px 30px rgba(31,26,23,0.05);
-      position: sticky;
-      top: 12px;
-      z-index: 50;
-    }
-
-    .dock-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .control-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.45rem;
-    }
-
-    .control-label {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--muted);
-      font-weight: 700;
+      max-width: 640px;
     }
 
     .btn-row {
       display: flex;
-      gap: 0.4rem;
+      gap: 0.45rem;
       flex-wrap: wrap;
     }
 
     .chip-btn {
-      padding: 0.45rem 0.9rem;
+      padding: 0.5rem 1rem;
       border-radius: 999px;
       border: 1px solid var(--border);
-      background: var(--bg);
+      background: var(--card);
       color: var(--text);
       font-size: 0.82rem;
       font-weight: 500;
       cursor: pointer;
       transition: all 0.15s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
     }
 
     .chip-btn:hover {
@@ -166,12 +103,29 @@
       border-color: var(--text);
     }
 
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      display: inline-block;
-      border: 1px solid rgba(0,0,0,0.15);
+    /* Foundation Card */
+    .foundation-bar {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .foundation-item h4 {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .foundation-item p {
+      font-size: 0.86rem;
+      font-weight: 500;
     }
 
     /* Brand Grid */
@@ -189,7 +143,6 @@
 
     @media (max-width: 880px) {
       .brand-grid { grid-template-columns: 1fr; }
-      .studio-dock { position: static; }
     }
 
     .brand-col {
@@ -212,7 +165,7 @@
     }
 
     .brand-col.sunkissed .brand-header {
-      background: linear-gradient(135deg, #F4EFEA 0%, #E5DACB 100%);
+      background: linear-gradient(135deg, #F4EFEA 0%, #DFD3C3 100%);
       color: var(--espresso);
     }
 
@@ -257,7 +210,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.65rem;
       flex-wrap: wrap;
       gap: 0.5rem;
     }
@@ -272,17 +225,23 @@
 
     .mini-tabs {
       display: flex;
-      gap: 0.3rem;
+      gap: 0.35rem;
+      flex-wrap: wrap;
     }
 
     .mini-tab {
-      font-size: 0.72rem;
-      padding: 0.22rem 0.55rem;
+      font-size: 0.74rem;
+      padding: 0.28rem 0.68rem;
       border-radius: 6px;
       border: 1px solid var(--border);
       background: var(--bg);
       cursor: pointer;
       font-weight: 500;
+      transition: all 0.15s ease;
+    }
+
+    .mini-tab:hover {
+      border-color: #B5ACA3;
     }
 
     .mini-tab.active {
@@ -308,188 +267,15 @@
     }
 
     .visual-card img:hover {
-      transform: scale(1.015);
+      transform: scale(1.012);
     }
 
     .visual-caption {
-      padding: 0.7rem 1rem;
-      font-size: 0.8rem;
+      padding: 0.8rem 1rem;
+      font-size: 0.82rem;
       color: var(--muted);
       background: #fff;
       border-top: 1px solid var(--border);
-    }
-
-    /* Interactive Live Box Preview */
-    .live-stage {
-      background: linear-gradient(180deg, #F3EFEA 0%, #E7DFD5 100%);
-      border-radius: 14px;
-      padding: 2rem 1.25rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border: 1px solid var(--border);
-      position: relative;
-    }
-
-    .nail-box {
-      width: 226px;
-      height: 348px;
-      border-radius: 10px;
-      box-shadow: 0 22px 44px rgba(31,26,23,0.18), -7px 0 0 rgba(0,0,0,0.08);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.45rem 1.1rem 1.2rem;
-      position: relative;
-      overflow: hidden;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-
-    /* Sundae Box Variants */
-    .nail-box.sundae-box {
-      background: linear-gradient(180deg, var(--box-top, #FFF9CC) 35%, var(--box-btm, #FFCC85) 100%);
-      border-left: 7px solid #FFC9DA;
-    }
-
-    .fudge-header {
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 106px;
-      background: #5C361E;
-      border-bottom-left-radius: 26px;
-      border-bottom-right-radius: 26px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      color: #FFF9CC;
-      font-family: 'Fraunces', serif;
-      font-weight: 800;
-      font-size: 1.35rem;
-      line-height: 1.04;
-      letter-spacing: 0.02em;
-      box-shadow: 0 6px 14px rgba(92,54,30,0.2);
-      transition: all 0.25s ease;
-    }
-
-    .sundae-box.style-stripe .fudge-header {
-      height: 82px;
-      border-radius: 0;
-      background: #FFF9CC;
-      color: #5C361E;
-      box-shadow: none;
-      border-bottom: 10px solid;
-      border-image: linear-gradient(90deg, #5C361E 20%, #FFC9DA 20% 40%, #C2F5D0 40% 60%, #FFF9CC 60% 80%, #FFCC85 80%) 1;
-    }
-
-    .sundae-box.style-scoop .fudge-header {
-      height: 145px;
-      border-bottom-left-radius: 90px;
-      border-bottom-right-radius: 90px;
-      background: #FFC9DA;
-      color: #5C361E;
-    }
-
-    /* Sun Kissed Box Variants */
-    .nail-box.sunkissed-box {
-      background: linear-gradient(180deg, #F4EFEA 0%, #F4EFEA 52%, var(--sk-btm, #C8B59E) 52%, var(--sk-btm2, #BFA183) 100%);
-      border-left: 7px solid #DFD5C8;
-    }
-
-    .sunkissed-box.style-linen {
-      background: #F4EFEA;
-      border-bottom: 14px solid var(--sk-btm, #C8B59E);
-    }
-
-    .sunkissed-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.38rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      color: #2C221E;
-      margin-top: 0.7rem;
-      transition: all 0.2s ease;
-    }
-
-    .sunkissed-title.font-sans {
-      font-family: 'Inter', sans-serif;
-      font-weight: 700;
-      font-size: 1.18rem;
-      letter-spacing: 0.22em;
-    }
-
-    /* 5-Nail Lineup */
-    .nail-lineup {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 7px;
-      margin: auto 0;
-      z-index: 2;
-      padding-top: 34px;
-    }
-
-    .sunkissed-box .nail-lineup { padding-top: 4px; }
-
-    .nail-tip {
-      border-radius: 50% 50% 44% 44% / 62% 62% 38% 38%;
-      background: var(--nail-bg, radial-gradient(ellipse at 35% 30%, #FFF8EE 0%, #DFC3A5 38%, #B59273 78%, #E8D3BA 100%));
-      box-shadow: 0 5px 10px rgba(44,34,30,0.24), inset 2px 3px 6px rgba(255,255,255,0.75);
-      position: relative;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-
-    .nail-tip::after {
-      content: '';
-      position: absolute;
-      inset: -20%;
-      background: linear-gradient(125deg, transparent 38%, rgba(255,252,245,0.82) 49%, transparent 60%);
-    }
-
-    .nail-tip.ring-accent.accent-on {
-      background: var(--ring-bg, radial-gradient(circle at 35% 30%, #FFFFFF 0%, #F7E3B5 45%, #C5A059 100%));
-      box-shadow: 0 5px 12px rgba(197,160,89,0.45), inset 0 0 8px #fff;
-    }
-
-    .n1 { width: 27px; height: 49px; }
-    .n2 { width: 22px; height: 43px; transform: translateY(4px); }
-    .n3 { width: 24px; height: 47px; transform: translateY(-2px); }
-    .n4 { width: 22px; height: 43px; transform: translateY(3px); }
-    .n5 { width: 17px; height: 35px; transform: translateY(6px); }
-
-    .box-footer { z-index: 2; width: 100%; }
-
-    .sundae-pill {
-      background: var(--pill-bg, #FFC9DA);
-      color: var(--pill-text, #5C361E);
-      font-size: 0.62rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      padding: 0.3rem 0.65rem;
-      border-radius: 99px;
-      display: inline-block;
-      margin-bottom: 0.28rem;
-      text-transform: uppercase;
-    }
-
-    .box-sub {
-      font-size: 0.54rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      opacity: 0.85;
-      font-weight: 600;
-    }
-
-    .sunkissed-shade {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 0.96rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      color: var(--sk-text, #2C221E);
-      text-transform: uppercase;
     }
 
     /* Palette Strip */
@@ -537,10 +323,7 @@
       border: 1px solid var(--border);
       background: var(--bg);
       font-weight: 500;
-      cursor: pointer;
     }
-
-    .pill:hover { border-color: var(--text); }
 
     /* Lightbox Modal */
     .lightbox {
@@ -591,141 +374,83 @@
   <div class="container">
     <header>
       <div>
-        <div class="eyebrow">Interactive Brand Identity &amp; Packaging Studio</div>
+        <div class="eyebrow">Brand Identity &amp; Pouch Packaging Review</div>
         <h1>Sundae Reset vs. Sun Kissed</h1>
         <p class="subtitle">
-          Compare the studio packaging mockups and logos, or use the live controls below to test different shades, ring-finger accents, and box layouts in real time.
+          Compare the physical flat-pouch packaging contenders, typography systems, and color palettes across both brand directions. Click any image to inspect full screen.
         </p>
+      </div>
+      <div class="btn-row">
+        <button class="chip-btn active" onclick="setView('both', this)">Side-by-Side</button>
+        <button class="chip-btn" onclick="setView('sundae', this)">Sundae Reset Only</button>
+        <button class="chip-btn" onclick="setView('sunkissed', this)">Sun Kissed Only</button>
       </div>
     </header>
 
     <section class="foundation-bar">
       <div class="foundation-item">
         <h4>The Product &amp; Tech</h4>
-        <p>60% pre-cured real liquid gel strips that harden in natural daylight (HeyHae-style solar gel tech). No UV lamp required.</p>
+        <p>60% pre-cured real liquid gel strips that harden in natural daylight (HeyHae-style solar gel tech). <code>NO LED LAMP NEEDED</code>.</p>
       </div>
       <div class="foundation-item">
         <h4>Target Customer</h4>
         <p>Women (and men) tired of $80+, 2-hour salon visits who want salon-grade maintenance as an easy at-home self-care ritual.</p>
       </div>
       <div class="foundation-item">
-        <h4>Packaging Rules</h4>
-        <p>HeyHae box proportions. Fully enclosed (no plastic window, protects from UV) &amp; no AI hands—just a 5-nail 3D gloss lineup on the front.</p>
+        <h4>Pouch Packaging Format</h4>
+        <p>Tall, slim, rounded-corner flat beauty pouch (UV-protective, no plastic window) with a whimsical 5-nail cascade printed on the front.</p>
       </div>
       <div class="foundation-item">
         <h4>Assortment Focus</h4>
-        <p>North American wearable staples (neutrals, reds/maroons, cat-eye, ring-finger accents) + Holiday/Winter LTO drops.</p>
-      </div>
-    </section>
-
-    <!-- INTERACTIVE CONTROL BAR -->
-    <section class="studio-dock">
-      <div class="dock-grid">
-        <div class="control-group">
-          <span class="control-label">1. View Mode</span>
-          <div class="btn-row">
-            <button class="chip-btn active" onclick="setView('both', this)">Side-by-Side</button>
-            <button class="chip-btn" onclick="setView('sundae', this)">Sundae Reset Only</button>
-            <button class="chip-btn" onclick="setView('sunkissed', this)">Sun Kissed Only</button>
-          </div>
-        </div>
-
-        <div class="control-group">
-          <span class="control-label">2. Live Test Shade (Updates Interactive Boxes Below)</span>
-          <div class="btn-row" id="shadeBtns">
-            <button class="chip-btn active" onclick="setShade('cateye', this)"><span class="dot" style="background:#D5B895"></span>Cat-Eye Neutral</button>
-            <button class="chip-btn" onclick="setShade('maroon', this)"><span class="dot" style="background:#5E1924"></span>Deep Maroon</button>
-            <button class="chip-btn" onclick="setShade('red', this)"><span class="dot" style="background:#B81D24"></span>Classic Red</button>
-            <button class="chip-btn" onclick="setShade('neutral', this)"><span class="dot" style="background:#F2DFCE"></span>Sheer Neutral</button>
-            <button class="chip-btn" onclick="setShade('holiday', this)"><span class="dot" style="background:#1F4E3D"></span>Holiday / Winter LTO</button>
-          </div>
-        </div>
-
-        <div class="control-group">
-          <span class="control-label">3. Ring Finger Accent</span>
-          <div class="btn-row">
-            <button class="chip-btn" id="ringBtn" onclick="toggleRingAccent()">✨ Ring Finger Accent: OFF</button>
-          </div>
-        </div>
+        <p>North American wearable staples (Crème Brûlée neutral, sheer nudes, classic reds, deep maroons) + Holiday/Winter LTO drops.</p>
       </div>
     </section>
 
     <main class="brand-grid" id="brandGrid">
-      <!-- DIRECTION 1: SUNDAE RESET -->
+      <!-- CONCEPT 1: SUNDAE RESET -->
       <article class="brand-col sundae" id="colSundae">
         <div class="brand-header">
-          <span class="brand-tag">Direction 01 • Bold &amp; Ritualistic</span>
+          <span class="brand-tag">Concept 01 (C1) • Bold &amp; Whimsical</span>
           <h2>Sundae Reset</h2>
-          <p>Sweet, indulgent, treat-yourself, dreamy, and bold. Ties together <strong>Sun</strong> (how it cures), <strong>Sundae</strong> (delicious colors), and the weekly <strong>Sunday Reset</strong> self-care ritual.</p>
+          <p>Sweet, indulgent, treat-yourself, dreamy, and bold. Ties together <strong>Sun</strong> (how it cures), <strong>Sundae</strong> (delicious flavours), and the weekly <strong>Sunday Reset</strong> self-care ritual.</p>
         </div>
 
         <div class="brand-body">
           <div>
             <div class="section-head">
-              <span class="section-label">3 Pouch Packaging Contenders (Cat-Eye Neutral)</span>
+              <span class="section-label">Pouch Packaging Options (Flavour 01: Crème Brûlée)</span>
               <div class="mini-tabs">
-                <button class="mini-tab active" onclick="switchSundaeMockup('v1', this)">V1: Fudge Dipped</button>
-                <button class="mini-tab" onclick="switchSundaeMockup('v2', this)">V2: Electric Gelateria ⭐</button>
-                <button class="mini-tab" onclick="switchSundaeMockup('v3', this)">V3: Dopamine Sticker</button>
-                <button class="mini-tab" onclick="switchSundaeMockup('box', this)">Original Box</button>
-              </div>
-            </div>
-            <div class="visual-card" id="sundaeMockupCard">
-              <img id="sundaeMockupImg" src="https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-v1-fudge-pouch.jpg" onerror="this.src='assets/sundae-v1-fudge-pouch.jpg'" alt="Sundae Reset Studio Pouch Mockup" onclick="openLightbox(this.src)" />
-              <div class="visual-caption" id="sundaeMockupCaption">
-                <strong>Version 1 — "Fudge Dipped" Resealable Pouch:</strong> Keeps your original Ice Cream Parlor palette &amp; glossy 3D chocolate drip header on a sleek resealable UV-barrier beauty pouch. Paired with <em>Fraunces Black</em> + <em>Plus Jakarta Sans</em> typography.
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="section-head">
-              <span class="section-label">Interactive Pouch/Box Customizer (Live Shade &amp; Layout Test)</span>
-              <div class="mini-tabs">
-                <button class="mini-tab active" onclick="setSundaeStyle('dipped', this)">V1: Fudge Dipped</button>
-                <button class="mini-tab" onclick="setSundaeStyle('stripe', this)">V2: Gelateria Stripe</button>
-                <button class="mini-tab" onclick="setSundaeStyle('scoop', this)">V3: Scallop Scoop</button>
-              </div>
-            </div>
-            <div class="live-stage">
-              <div class="nail-box sundae-box" id="sundaeLiveBox">
-                <div class="fudge-header" id="sundaeHeader">SUNDAE<br/>RESET</div>
-                <div class="nail-lineup">
-                  <div class="nail-tip n1"></div>
-                  <div class="nail-tip n2"></div>
-                  <div class="nail-tip n3"></div>
-                  <div class="nail-tip n4 ring-accent"></div>
-                  <div class="nail-tip n5"></div>
-                </div>
-                <div class="box-footer">
-                  <div class="sundae-pill" id="sundaeShadeLabel">CRÈME BRÛLÉE • CAT-EYE GEL</div>
-                  <div class="box-sub" id="sundaeSub">Sun-Cured in Minutes • 28 Strips</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="section-head">
-              <span class="section-label">Logo &amp; Typography System (3 Font Directions)</span>
-              <div class="mini-tabs">
-                <button class="mini-tab active" onclick="switchSundaeLogo('guide', this)">3-Font System Board</button>
-                <button class="mini-tab" onclick="switchSundaeLogo('orig', this)">V1 Fudge Wordmark</button>
+                <button class="mini-tab active" onclick="switchSundaeMockup('c1o1', this)">C1O1: The Fudge Dip</button>
+                <button class="mini-tab" onclick="switchSundaeMockup('c1o2', this)">C1O2: Ice Cream Parlour</button>
               </div>
             </div>
             <div class="visual-card">
-              <img id="sundaeLogoImg" src="https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-typography-guide.jpg" onerror="this.src='assets/sundae-typography-guide.jpg'" alt="Sundae Reset Typography System" onclick="openLightbox(this.src)" />
-              <div class="visual-caption" id="sundaeLogoCaption">
-                <strong>01. Retro-Soda Serif:</strong> <em>Fraunces Black</em> + <em>Plus Jakarta Sans</em> &nbsp;|&nbsp;
-                <strong>02. Editorial Gelateria Split:</strong> <em>Instrument Serif Italic</em> + <em>Space Grotesk Bold</em> &nbsp;|&nbsp;
-                <strong>03. Dopamine Sans:</strong> <em>Syne ExtraBold</em> + <em>DM Mono</em>
+              <img id="sundaeMockupImg" src="assets/sundae-v1-fudge-pouch.jpg" alt="Sundae Reset Studio Pouch Mockup" onclick="openLightbox(this.src)" />
+              <div class="visual-caption" id="sundaeMockupCaption">
+                <strong>C1O1 — "The Fudge Dip" Pouch:</strong> Incorporates all 5 <strong>C1O1 Original Pastel Ice Cream</strong> brand colours—Fudge (<code>#5C361E</code>) chocolate drip &amp; footer bar, plus the 4 pastel side stripes (Strawberry <code>#FFC9DA</code>, Pistachio <code>#C2F5D0</code>, Vanilla <code>#FFF9CC</code>, and Peach <code>#FFCC85</code>)—with a clean <code>flavour 01</code> / <code>CRÈME BRÛLÉE</code> lockup (no wavy line) and 5 cascading nails.
               </div>
             </div>
           </div>
 
           <div>
             <div class="section-head">
-              <span class="section-label">Palette A: Original Pastel Ice Cream (Click to copy)</span>
+              <span class="section-label">Logo &amp; Typography System</span>
+              <div class="mini-tabs">
+                <button class="mini-tab active" onclick="switchSundaeLogo('orig', this)">C1O1 Bubble Wordmark</button>
+                <button class="mini-tab" onclick="switchSundaeLogo('guide', this)">C1O2 Parlour Typography</button>
+              </div>
+            </div>
+            <div class="visual-card">
+              <img id="sundaeLogoImg" src="assets/sundae-reset-logo.jpg" alt="Sundae Reset Typography System" onclick="openLightbox(this.src)" />
+              <div class="visual-caption" id="sundaeLogoCaption">
+                <strong>C1O1 Signature Bubble Wordmark:</strong> Hand-piped vanilla-cream &amp; chocolate fudge bubble lettering + circular sunburst ice cream parlour seal.
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-head">
+              <span class="section-label">C1O1 Palette: Original Pastel Ice Cream (Click to copy)</span>
             </div>
             <div class="palette-row" style="margin-bottom:1rem;">
               <div class="swatch" onclick="copyHex('#5C361E')"><div class="swatch-color" style="background:#5C361E"></div><div class="swatch-meta"><strong>Fudge</strong><span>#5C361E</span></div></div>
@@ -735,7 +460,7 @@
               <div class="swatch" onclick="copyHex('#FFCC85')"><div class="swatch-color" style="background:#FFCC85"></div><div class="swatch-meta"><strong>Peach</strong><span>#FFCC85</span></div></div>
             </div>
             <div class="section-head">
-              <span class="section-label">Palette B: Bolder "Electric Gelateria" (Click to copy)</span>
+              <span class="section-label">C1O2 Palette: Bolder "Electric Gelateria" (Click to copy)</span>
             </div>
             <div class="palette-row">
               <div class="swatch" onclick="copyHex('#D91E36')"><div class="swatch-color" style="background:#D91E36"></div><div class="swatch-meta"><strong>Maraschino</strong><span>#D91E36</span></div></div>
@@ -747,17 +472,17 @@
           </div>
 
           <div>
-            <div class="section-label" style="margin-bottom:0.5rem;">Brand Voice &amp; Shade Naming (Click any shade to preview)</div>
+            <div class="section-label" style="margin-bottom:0.5rem;">Brand Voice &amp; Flavour Architecture</div>
             <ul class="info-list">
-              <li><strong>Vibe:</strong> Cheeky, high-energy, dopamine-inducing. Turns a weekly nail routine into a guilt-free dessert treat.</li>
-              <li><strong>Tagline:</strong> <em>"Your weekly treat, cured by the sun."</em></li>
-              <li><strong>Core Wearable Shades &amp; Winter LTOs:</strong>
+              <li><strong>Vibe:</strong> Cheeky, whimsical, dopamine-inducing. Turns a weekly nail routine into a guilt-free Sunday dessert ritual.</li>
+              <li><strong>Tagline:</strong> <em>"May your Sundays be as sweet as your nails."</em></li>
+              <li><strong>Launch Assortment Flavours:</strong>
                 <div class="shade-pills">
-                  <span class="pill" onclick="triggerShade('cateye')">Crème Brûlée (Cat-Eye Neutral)</span>
-                  <span class="pill" onclick="triggerShade('neutral')">Vanilla Bean (Sheer Neutral)</span>
-                  <span class="pill" onclick="triggerShade('red')">Maraschino (Classic Red)</span>
-                  <span class="pill" onclick="triggerShade('maroon')">Black Cherry (Deep Maroon)</span>
-                  <span class="pill" onclick="triggerShade('holiday')">Peppermint Bark (Holiday LTO)</span>
+                  <span class="pill">flavour 01: Crème Brûlée</span>
+                  <span class="pill">flavour 02: Vanilla Bean</span>
+                  <span class="pill">flavour 03: Maraschino</span>
+                  <span class="pill">flavour 04: Black Cherry</span>
+                  <span class="pill">flavour 05: Peppermint Bark (LTO)</span>
                 </div>
               </li>
             </ul>
@@ -765,93 +490,82 @@
         </div>
       </article>
 
-      <!-- DIRECTION 2: SUN KISSED -->
+      <!-- CONCEPT 2: SUN KISSED -->
       <article class="brand-col sunkissed" id="colSunkissed">
         <div class="brand-header">
-          <span class="brand-tag">Direction 02 • Elevated &amp; Effortless</span>
+          <span class="brand-tag">Concept 02 (C2) • High-End Quiet Luxury</span>
           <h2>Sun Kissed</h2>
-          <p>Muted, quiet-luxury look (at an accessible price point), golden hour, effortless. Inspired by <strong>Rhode</strong> and <strong>Merit</strong>—nails literally kissed by the sun to cure.</p>
+          <p>Architectural, minimalist, and ultra-elevated. Inspired by <strong>Rhode, Merit, Toteme, and Chanel Les Beiges</strong>—solar-cured gel strips packaged like a $55 luxury beauty object.</p>
         </div>
 
         <div class="brand-body">
           <div>
             <div class="section-head">
-              <span class="section-label">Studio Packaging Mockup (Cat-Eye Neutral)</span>
-              <span style="font-size:0.75rem;color:var(--muted)">Click image to zoom</span>
-            </div>
-            <div class="visual-card">
-              <img src="https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sun-kissed-packaging.jpg" onerror="this.src='assets/sun-kissed-packaging.jpg'" alt="Sun Kissed Studio Packaging Mockup" onclick="openLightbox(this.src)" />
-              <div class="visual-caption">
-                <strong>Two-Tone Horizon Studio Render:</strong> Uncoated Warm Linen top half (signature brand color) meeting a Champagne Taupe lower panel that reflects the <em>01 — Cashmere</em> Cat-Eye Neutral nails inside.
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="section-head">
-              <span class="section-label">Interactive Box Customizer (Live Shade &amp; Layout Test)</span>
+              <span class="section-label">Pouch Packaging Options (Shade 01: Cashmere)</span>
               <div class="mini-tabs">
-                <button class="mini-tab active" onclick="setSkStyle('horizon', this)">Horizon Split</button>
-                <button class="mini-tab" onclick="setSkStyle('linen', this)">Minimalist Linen</button>
-                <button class="mini-tab" onclick="toggleSkFont(this)">Font: Serif / Sans</button>
+                <button class="mini-tab active" onclick="switchSkMockup('c2o1', this)">C2O1: Solar Aura Arch</button>
+                <button class="mini-tab" onclick="switchSkMockup('c2o2', this)">C2O2: Riviera Cabana</button>
               </div>
-            </div>
-            <div class="live-stage">
-              <div class="nail-box sunkissed-box" id="skLiveBox">
-                <div class="sunkissed-title" id="skTitle">SUN KISSED</div>
-                <div class="nail-lineup">
-                  <div class="nail-tip n1"></div>
-                  <div class="nail-tip n2"></div>
-                  <div class="nail-tip n3"></div>
-                  <div class="nail-tip n4 ring-accent"></div>
-                  <div class="nail-tip n5"></div>
-                </div>
-                <div class="box-footer">
-                  <div class="sunkissed-shade" id="skShadeLabel">01 — CASHMERE</div>
-                  <div class="box-sub" id="skSub" style="margin-top:2px;">Magnetic Cat-Eye • 28 Strips</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="section-head">
-              <span class="section-label">Logo &amp; Visual Identity Sheet</span>
-              <span style="font-size:0.75rem;color:var(--muted)">Click image to zoom</span>
             </div>
             <div class="visual-card">
-              <img src="https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sun-kissed-logo.jpg" onerror="this.src='assets/sun-kissed-logo.jpg'" alt="Sun Kissed Logo Sheet" onclick="openLightbox(this.src)" />
-              <div class="visual-caption">
-                Editorial serif wordmark in Deep Espresso &amp; Brushed Gold, rising sun halo, and SK monogram.
+              <img id="skMockupImg" src="assets/sunkissed-v1-horizon-pouch.jpg" onerror="this.src='assets/sun-kissed-packaging.jpg'" alt="Sun Kissed Luxury Pouch Mockup" onclick="openLightbox(this.src)" />
+              <div class="visual-caption" id="skMockupCaption">
+                <strong>C2O1 — "Solar Aura &amp; Travertine Arch" Pouch:</strong> Features the signature <strong>18k Brushed Gold Rising-Sun Arch &amp; Rays logo crest</strong> above <code>SUN KISSED</code>, a sculpted <strong>Golden-Hour Travertine &amp; Champagne Taupe Solar Arch</strong> (<code>#D2B99D</code> &rarr; <code>#BFA183</code>) framing the 5 cascading nails, an Alabaster Linen <code>01 — CASHMERE</code> couture plaque, and a grounding <strong>Deep Espresso (<code>#2C221E</code>)</strong> base bar (with the bottom slogan removed).
               </div>
             </div>
           </div>
 
           <div>
             <div class="section-head">
-              <span class="section-label">Golden-Hour Color Palette (Click to copy Hex)</span>
+              <span class="section-label">Luxury Typography &amp; Visual Identity System</span>
+              <div class="mini-tabs">
+                <button class="mini-tab active" onclick="switchSkLogo('guide', this)">C2 Couture Font System</button>
+                <button class="mini-tab" onclick="switchSkLogo('orig', this)">C2 Primary Crest &amp; Monogram</button>
+              </div>
             </div>
-            <div class="palette-row">
+            <div class="visual-card">
+              <img id="skLogoImg" src="assets/sunkissed-typography-guide.jpg" onerror="this.src='assets/sun-kissed-logo.jpg'" alt="Sun Kissed Typography &amp; Logo Sheet" onclick="openLightbox(this.src)" />
+              <div class="visual-caption" id="skLogoCaption">
+                <strong>High-End Typography System:</strong> <strong>01. Couture Serif</strong> (<em>Didot / Bodoni Moda</em> + <em>Neue Haas Grotesk</em>) &nbsp;|&nbsp; <strong>02. Architectural Split</strong> (<em>Cormorant Garamond Italic</em> + <em>Monument Extended</em>) &nbsp;|&nbsp; <strong>03. Modernist Apothecary</strong> (<em>PP Editorial New</em>).
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-head">
+              <span class="section-label">C2O1 Palette: Quiet-Luxury Golden Hour (Click to copy)</span>
+            </div>
+            <div class="palette-row" style="margin-bottom:1rem;">
               <div class="swatch" onclick="copyHex('#F4EFEA')"><div class="swatch-color" style="background:#F4EFEA"></div><div class="swatch-meta"><strong>Linen</strong><span>#F4EFEA</span></div></div>
               <div class="swatch" onclick="copyHex('#D2B99D')"><div class="swatch-color" style="background:#D2B99D"></div><div class="swatch-meta"><strong>Travertine</strong><span>#D2B99D</span></div></div>
               <div class="swatch" onclick="copyHex('#BFA183')"><div class="swatch-color" style="background:#BFA183"></div><div class="swatch-meta"><strong>Taupe</strong><span>#BFA183</span></div></div>
-              <div class="swatch" onclick="copyHex('#C5A059')"><div class="swatch-color" style="background:#C5A059"></div><div class="swatch-meta"><strong>Gold</strong><span>#C5A059</span></div></div>
+              <div class="swatch" onclick="copyHex('#C5A059')"><div class="swatch-color" style="background:#C5A059"></div><div class="swatch-meta"><strong>Gold Foil</strong><span>#C5A059</span></div></div>
               <div class="swatch" onclick="copyHex('#2C221E')"><div class="swatch-color" style="background:#2C221E"></div><div class="swatch-meta"><strong>Espresso</strong><span>#2C221E</span></div></div>
+            </div>
+            <div class="section-head">
+              <span class="section-label">C2O2 Palette: Endless Summer "Mediterranean Riviera" (Click to copy)</span>
+            </div>
+            <div class="palette-row">
+              <div class="swatch" onclick="copyHex('#1B4D89')"><div class="swatch-color" style="background:#1B4D89"></div><div class="swatch-meta"><strong>Cobalt</strong><span>#1B4D89</span></div></div>
+              <div class="swatch" onclick="copyHex('#D96B43')"><div class="swatch-color" style="background:#D96B43"></div><div class="swatch-meta"><strong>Terracotta</strong><span>#D96B43</span></div></div>
+              <div class="swatch" onclick="copyHex('#F4C44E')"><div class="swatch-color" style="background:#F4C44E"></div><div class="swatch-meta"><strong>Limoncello</strong><span>#F4C44E</span></div></div>
+              <div class="swatch" onclick="copyHex('#FAF6F0')"><div class="swatch-color" style="background:#FAF6F0"></div><div class="swatch-meta"><strong>Chalk Linen</strong><span>#FAF6F0</span></div></div>
+              <div class="swatch" onclick="copyHex('#1D2432')"><div class="swatch-color" style="background:#1D2432"></div><div class="swatch-meta"><strong>Riviera Navy</strong><span>#1D2432</span></div></div>
             </div>
           </div>
 
           <div>
-            <div class="section-label" style="margin-bottom:0.5rem;">Brand Voice &amp; Shade Naming (Click any shade to preview)</div>
+            <div class="section-label" style="margin-bottom:0.5rem;">Brand Voice &amp; Shade Architecture</div>
             <ul class="info-list">
-              <li><strong>Vibe:</strong> Cool, composed, architectural, editorial. Makes an affordable at-home nail strip feel like a $45 luxury beauty object.</li>
-              <li><strong>Tagline:</strong> <em>"Salon gel, kissed by the sun."</em></li>
-              <li><strong>Core Wearable Shades &amp; Winter LTOs:</strong>
+              <li><strong>Vibe:</strong> Cool, composed, architectural, editorial. Elevates an accessible solar gel strip into a coveted luxury vanity staple.</li>
+              <li><strong>Tagline:</strong> <em>"Solar-cured gel lacquer, kissed by natural daylight."</em></li>
+              <li><strong>Launch Assortment Shades:</strong>
                 <div class="shade-pills">
-                  <span class="pill" onclick="triggerShade('cateye')">01 — Cashmere (Cat-Eye Neutral)</span>
-                  <span class="pill" onclick="triggerShade('neutral')">02 — Chiffon (Sheer Nude)</span>
-                  <span class="pill" onclick="triggerShade('red')">03 — Rouge (Classic Red)</span>
-                  <span class="pill" onclick="triggerShade('maroon')">04 — Bordeaux (Deep Maroon)</span>
-                  <span class="pill" onclick="triggerShade('holiday')">05 — Alpine Glow (Winter LTO)</span>
+                  <span class="pill">N° 01 — Crème Brûlée</span>
+                  <span class="pill">N° 02 — Chiffon</span>
+                  <span class="pill">N° 03 — Rouge</span>
+                  <span class="pill">N° 04 — Bordeaux</span>
+                  <span class="pill">N° 05 — Alpine Glow (LTO)</span>
                 </div>
               </li>
             </ul>
@@ -868,71 +582,6 @@
   <div class="toast" id="toast">Copied to clipboard</div>
 
   <script>
-    const SHADES = {
-      cateye: {
-        nailBg: 'radial-gradient(ellipse at 35% 30%, #FFF8EE 0%, #DFC3A5 38%, #B59273 78%, #E8D3BA 100%)',
-        ringBg: 'radial-gradient(circle at 35% 30%, #FFFFFF 0%, #FFE6B8 45%, #C59B4E 100%)',
-        sundaeName: 'CRÈME BRÛLÉE • CAT-EYE GEL',
-        sundaeTop: '#FFF9CC',
-        sundaeBtm: '#FFCC85',
-        skName: '01 — CASHMERE',
-        skSub: 'Magnetic Cat-Eye • 28 Strips',
-        skBtm: '#C8B59E',
-        skBtm2: '#BFA183',
-        skText: '#2C221E'
-      },
-      maroon: {
-        nailBg: 'radial-gradient(ellipse at 32% 28%, #9E2A3B 0%, #58111A 55%, #36070D 100%)',
-        ringBg: 'radial-gradient(circle at 35% 30%, #FFD6DD 0%, #9E2A3B 50%, #4A0E17 100%)',
-        sundaeName: 'BLACK CHERRY • GLOSS GEL',
-        sundaeTop: '#FFF9CC',
-        sundaeBtm: '#F3B3C4',
-        skName: '04 — BORDEAUX',
-        skSub: 'High-Gloss Gel Manicure • 28 Strips',
-        skBtm: '#5E232B',
-        skBtm2: '#42161C',
-        skText: '#F4EFEA'
-      },
-      red: {
-        nailBg: 'radial-gradient(ellipse at 32% 28%, #FF5C63 0%, #C4151C 55%, #8A0B10 100%)',
-        ringBg: 'radial-gradient(circle at 35% 30%, #FFF5F5 0%, #F5A3A7 45%, #C4151C 100%)',
-        sundaeName: 'MARASCHINO • GLOSS GEL',
-        sundaeTop: '#FFF9CC',
-        sundaeBtm: '#FFC9DA',
-        skName: '03 — ROUGE',
-        skSub: 'Daylight-Cured Gel • 28 Strips',
-        skBtm: '#A82828',
-        skBtm2: '#871C1C',
-        skText: '#F4EFEA'
-      },
-      neutral: {
-        nailBg: 'radial-gradient(ellipse at 35% 30%, #FFFDFB 0%, #F5E2D3 55%, #E2C6B2 100%)',
-        ringBg: 'radial-gradient(circle at 35% 30%, #FFFFFF 0%, #F3E5D8 45%, #C5A059 100%)',
-        sundaeName: 'VANILLA BEAN • SHEER JELLY',
-        sundaeTop: '#FFF9CC',
-        sundaeBtm: '#F7E7CE',
-        skName: '02 — CHIFFON',
-        skSub: 'Sheer Neutral Gel • 28 Strips',
-        skBtm: '#E3D3C3',
-        skBtm2: '#D5C1AE',
-        skText: '#2C221E'
-      },
-      holiday: {
-        nailBg: 'radial-gradient(ellipse at 35% 30%, #FFFFFF 0%, #D9ECE2 42%, #8FB8A4 82%, #E8F5EE 100%)',
-        ringBg: 'repeating-linear-gradient(45deg, #D42426, #D42426 5px, #FFF9F5 5px, #FFF9F5 10px)',
-        sundaeName: 'PEPPERMINT BARK • HOLIDAY LTO',
-        sundaeTop: '#C2F5D0',
-        sundaeBtm: '#FFC9DA',
-        skName: '05 — ALPINE GLOW (LTO)',
-        skSub: 'Winter Sun Cat-Eye Edit • 28 Strips',
-        skBtm: '#C5A059',
-        skBtm2: '#A8843F',
-        skText: '#2C221E'
-      }
-    };
-
-    let ringAccentOn = false;
-
     function setView(mode, btn) {
       btn.parentElement.querySelectorAll('.chip-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
@@ -955,67 +604,14 @@
       }
     }
 
-    function setShade(key, btn) {
-      if (btn) {
-        document.querySelectorAll('#shadeBtns .chip-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      }
-      const s = SHADES[key];
-      document.documentElement.style.setProperty('--nail-bg', s.nailBg);
-      document.documentElement.style.setProperty('--ring-bg', s.ringBg);
-      document.documentElement.style.setProperty('--box-top', s.sundaeTop);
-      document.documentElement.style.setProperty('--box-btm', s.sundaeBtm);
-      document.documentElement.style.setProperty('--sk-btm', s.skBtm);
-      document.documentElement.style.setProperty('--sk-btm2', s.skBtm2);
-
-      document.getElementById('sundaeShadeLabel').textContent = s.sundaeName;
-      document.getElementById('skShadeLabel').textContent = s.skName;
-      document.getElementById('skSub').textContent = s.skSub;
-
-      const skBox = document.getElementById('skLiveBox');
-      const isLinen = skBox.classList.contains('style-linen');
-      const footerColor = isLinen ? '#2C221E' : s.skText;
-      document.getElementById('skShadeLabel').style.color = footerColor;
-      document.getElementById('skSub').style.color = footerColor;
-    }
-
-    function triggerShade(key) {
-      const btns = document.querySelectorAll('#shadeBtns .chip-btn');
-      const map = { cateye: 0, maroon: 1, red: 2, neutral: 3, holiday: 4 };
-      setShade(key, btns[map[key]]);
-      document.getElementById('sundaeLiveBox').scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-
-    function toggleRingAccent() {
-      ringAccentOn = !ringAccentOn;
-      const btn = document.getElementById('ringBtn');
-      btn.classList.toggle('active', ringAccentOn);
-      btn.textContent = ringAccentOn ? '✨ Ring Finger Accent: ON' : '✨ Ring Finger Accent: OFF';
-      document.querySelectorAll('.ring-accent').forEach(el => {
-        el.classList.toggle('accent-on', ringAccentOn);
-      });
-    }
-
     const SUNDAE_MOCKUPS = {
-      v1: {
-        src: 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-v1-fudge-pouch.jpg',
-        fallback: 'assets/sundae-v1-fudge-pouch.jpg',
-        caption: '<strong>Version 1 — "Fudge Dipped" Resealable Pouch:</strong> Keeps your original Ice Cream Parlor palette &amp; glossy 3D chocolate drip header on a sleek resealable UV-barrier beauty pouch. Paired with <em>Fraunces Black</em> + <em>Plus Jakarta Sans</em> typography.'
+      c1o1: {
+        src: 'assets/sundae-v1-fudge-pouch.jpg',
+        caption: '<strong>C1O1 — "The Fudge Dip" Pouch:</strong> Incorporates all 5 <strong>C1O1 Original Pastel Ice Cream</strong> brand colours—Fudge (<code>#5C361E</code>) chocolate drip &amp; footer bar, plus the 4 pastel side stripes (Strawberry <code>#FFC9DA</code>, Pistachio <code>#C2F5D0</code>, Vanilla <code>#FFF9CC</code>, and Peach <code>#FFCC85</code>)—with a clean <code>flavour 01</code> / <code>CRÈME BRÛLÉE</code> lockup (no wavy line) and 5 cascading nails.'
       },
-      v2: {
-        src: 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-v2-gelateria-pouch.jpg',
-        fallback: 'assets/sundae-v2-gelateria-pouch.jpg',
-        caption: '<strong>Version 2 (Top Recommendation) — "Electric Gelateria" Pouch:</strong> Punchier gelato colors (Maraschino Red, Bubblegum, Pistachio, Cream) in an Italian awning stripe header, high-arch caramel body, and an editorial split logo (<em>Instrument Serif Italic</em> + <em>Space Grotesk Bold</em>).'
-      },
-      v3: {
-        src: 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-v3-dopamine-pouch.jpg',
-        fallback: 'assets/sundae-v3-dopamine-pouch.jpg',
-        caption: '<strong>Version 3 — "Dopamine Scalloped Sticker" Pouch:</strong> Starface/Topicals-inspired pouch with an oversized wavy Butter Yellow &amp; Hot Pink scalloped sticker header and chunky <em>Syne ExtraBold</em> + <em>DM Mono</em> typography.'
-      },
-      box: {
-        src: 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-reset-packaging.jpg',
-        fallback: 'assets/sundae-reset-packaging.jpg',
-        caption: '<strong>Original "Fudge Dipped" Folding Carton Concept:</strong> Slim vertical box format with raised 3D fudge header and side scoop stripes.'
+      c1o2: {
+        src: 'assets/sundae-v2-gelateria-pouch.jpg',
+        caption: '<strong>C1O2 — "Ice Cream Parlour" Pouch (Electric Gelateria Palette):</strong> Printed onto a tangible flat beauty pouch with 4mm heat-sealed seams—featuring the 5 Electric Gelateria colours (Maraschino <code>#D91E36</code>, Butter <code>#FFE169</code>, Hot Pink <code>#FF4D88</code>, Espresso <code>#3B1D11</code>, and Bright Mint <code>#7CE597</code>) across the scalloped awning, cherry-topped <code>flavour 01: CRÈME BRÛLÉE</code> ticket, and whimsical nail cascade.'
       }
     };
 
@@ -1023,9 +619,7 @@
       btn.parentElement.querySelectorAll('.mini-tab').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const m = SUNDAE_MOCKUPS[ver];
-      const img = document.getElementById('sundaeMockupImg');
-      img.onerror = function() { this.src = m.fallback; };
-      img.src = m.src;
+      document.getElementById('sundaeMockupImg').src = m.src;
       document.getElementById('sundaeMockupCaption').innerHTML = m.caption;
     }
 
@@ -1035,41 +629,45 @@
       const img = document.getElementById('sundaeLogoImg');
       const cap = document.getElementById('sundaeLogoCaption');
       if (mode === 'guide') {
-        img.onerror = function() { this.src = 'assets/sundae-typography-guide.jpg'; };
-        img.src = 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-typography-guide.jpg';
-        cap.innerHTML = '<strong>01. Retro-Soda Serif:</strong> <em>Fraunces Black</em> + <em>Plus Jakarta Sans</em> &nbsp;|&nbsp; <strong>02. Editorial Gelateria Split:</strong> <em>Instrument Serif Italic</em> + <em>Space Grotesk Bold</em> &nbsp;|&nbsp; <strong>03. Dopamine Sans:</strong> <em>Syne ExtraBold</em> + <em>DM Mono</em>';
+        img.src = 'assets/sundae-typography-guide.jpg';
+        cap.innerHTML = '<strong>C1O2 Parlour Typography System:</strong> <em>Fraunces Black</em> + <em>Plus Jakarta Sans</em> &nbsp;|&nbsp; <em>Instrument Serif Italic</em> + <em>Space Grotesk Bold</em>';
       } else {
-        img.onerror = function() { this.src = 'assets/sundae-reset-logo.jpg'; };
-        img.src = 'https://raw.githubusercontent.com/createpancpan/project-nail/main/brand/assets/sundae-reset-logo.jpg';
-        cap.innerHTML = 'Original glossy Chocolate Fudge wordmark + circular sunburst ice cream badge.';
+        img.src = 'assets/sundae-reset-logo.jpg';
+        cap.innerHTML = '<strong>C1O1 Signature Bubble Wordmark:</strong> Hand-piped vanilla-cream &amp; chocolate fudge bubble lettering + circular sunburst ice cream parlour seal.';
       }
     }
 
-    function setSundaeStyle(style, btn) {
+    const SK_MOCKUPS = {
+      c2o1: {
+        src: 'assets/sunkissed-v1-horizon-pouch.jpg',
+        caption: '<strong>C2O1 — "Solar Aura &amp; Travertine Arch" Pouch:</strong> Features the signature <strong>18k Brushed Gold Rising-Sun Arch &amp; Rays logo crest</strong> above <code>SUN KISSED</code>, a sculpted <strong>Golden-Hour Travertine &amp; Champagne Taupe Solar Arch</strong> (<code>#D2B99D</code> &rarr; <code>#BFA183</code>) framing the 5 cascading nails, an Alabaster Linen <code>01 — CASHMERE</code> couture plaque, and a grounding <strong>Deep Espresso (<code>#2C221E</code>)</strong> base bar (with the bottom slogan removed).'
+      },
+      c2o2: {
+        src: 'assets/sunkissed-v2-dome-pouch.jpg',
+        caption: '<strong>C2O2 — "Riviera Cabana" Pouch (Endless Summer / <em>Jacquemus &amp; Loewe Paula\'s Ibiza</em> Vibe):</strong> Resort cabana stripes in <strong>Mediterranean Cobalt (<code>#1B4D89</code>)</strong> and <strong>Sun-Bleached Chalk Linen (<code>#FAF6F0</code>)</strong> accented with <strong>Terracotta (<code>#D96B43</code>)</strong> &amp; <strong>Limoncello Gold (<code>#F4C44E</code>)</strong> resort ticking, framing an uncluttered sunlit linen arch stage so the 5 cascading nails pop with maximum contrast.'
+      }
+    };
+
+    function switchSkMockup(ver, btn) {
       btn.parentElement.querySelectorAll('.mini-tab').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      const box = document.getElementById('sundaeLiveBox');
-      box.classList.remove('style-stripe', 'style-scoop');
-      if (style === 'stripe') box.classList.add('style-stripe');
-      if (style === 'scoop') box.classList.add('style-scoop');
+      const m = SK_MOCKUPS[ver];
+      document.getElementById('skMockupImg').src = m.src;
+      document.getElementById('skMockupCaption').innerHTML = m.caption;
     }
 
-    function setSkStyle(style, btn) {
-      const tabs = btn.parentElement.querySelectorAll('.mini-tab');
-      tabs[0].classList.remove('active');
-      tabs[1].classList.remove('active');
+    function switchSkLogo(mode, btn) {
+      btn.parentElement.querySelectorAll('.mini-tab').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      const box = document.getElementById('skLiveBox');
-      box.classList.toggle('style-linen', style === 'linen');
-      if (style === 'linen') {
-        document.getElementById('skShadeLabel').style.color = '#2C221E';
-        document.getElementById('skSub').style.color = '#2C221E';
+      const img = document.getElementById('skLogoImg');
+      const cap = document.getElementById('skLogoCaption');
+      if (mode === 'guide') {
+        img.src = 'assets/sunkissed-typography-guide.jpg';
+        cap.innerHTML = '<strong>High-End Typography System:</strong> <strong>01. Couture Serif</strong> (<em>Didot / Bodoni Moda</em> + <em>Neue Haas Grotesk</em>) &nbsp;|&nbsp; <strong>02. Architectural Split</strong> (<em>Cormorant Garamond Italic</em> + <em>Monument Extended</em>) &nbsp;|&nbsp; <strong>03. Modernist Apothecary</strong> (<em>PP Editorial New</em>).';
+      } else {
+        img.src = 'assets/sun-kissed-logo.jpg';
+        cap.innerHTML = '<strong>Primary Crest &amp; Monogram:</strong> Editorial serif wordmark in Deep Espresso &amp; Brushed Gold, rising sun halo, and SK monogram.';
       }
-    }
-
-    function toggleSkFont(btn) {
-      btn.classList.toggle('active');
-      document.getElementById('skTitle').classList.toggle('font-sans');
     }
 
     function copyHex(hex) {
